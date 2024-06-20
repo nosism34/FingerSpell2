@@ -1,6 +1,7 @@
 package com.example.fingerspell.data.di
 
 import android.content.Context
+import com.example.fingerspell.data.API.ApiConfig
 import com.example.fingerspell.data.pref.UserPreference
 import com.example.fingerspell.data.pref.UserRepository
 import com.example.fingerspell.data.pref.datastore

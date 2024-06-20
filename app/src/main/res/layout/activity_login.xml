@@ -16,7 +16,7 @@
             android:id="@+id/appbar_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
+            android:layout_gravity="left"
             android:src="@drawable/background_home" />
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -27,6 +27,30 @@
         android:layout_height="match_parent"
         android:layout_marginTop="62dp"
         tools:context=".ui.login.LoginActivity">
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/coklat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toEndOf="@+id/TextView"
+            app:layout_constraintTop_toBottomOf="@+id/loginButton"
+            app:layout_constraintVertical_bias="0.067" />
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="Don't have an account?"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginButton"
+            app:layout_constraintVertical_bias="0.069" />
 
         <TextView
             android:id="@+id/loginTitleTextView"
@@ -49,7 +73,6 @@
             android:layout_height="18dp"
             android:layout_marginTop="32dp"
             android:text="@string/email"
-            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.085"
             app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +93,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/emailEditText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:ems="10"
                 android:inputType="textEmailAddress"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -82,7 +105,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/password"
-            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.091"
             app:layout_constraintStart_toStartOf="parent"
@@ -104,7 +126,7 @@
             <com.example.fingerspell.View.costumView.TextEdit
                 android:id="@+id/passwordEditText"
                 android:layout_width="match_parent"
-                android:layout_height="44dp"
+                android:layout_height="50dp"
                 android:ems="10"
                 android:inputType="textPassword"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -113,9 +135,9 @@
         <com.example.fingerspell.View.costumView.Button
             android:id="@+id/loginButton"
             android:layout_width="0dp"
-            android:layout_height="64dp"
-            android:layout_marginTop="32dp"
+            android:layout_height="45dp"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="32dp"
             android:text="@string/login"
             app:layout_constraintEnd_toEndOf="parent"
